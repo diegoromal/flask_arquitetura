@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %} {% block title %} {{ config.get('TITLE') }}
+{% endblock %} {% block navbar %}
+
+<div class="navbar">
+    <div class="navbar-header">
+        <a href="#" class="navbar-brand">
+            <img src="data:image/png;base64,iVBORw8KGgoAAASUh" alt="Brand" />
+        </a>
+    </div>
+</div>
+{% endblock %} {% block content %}
+<div class="container">
+    <h1>{{ product.name }}</h1>
+
+    <div class="jumbotron">
+        {{ product.price }} <br />
+        {{ product.description }}
+    </div>
+    {% endblock %}
+</div>
